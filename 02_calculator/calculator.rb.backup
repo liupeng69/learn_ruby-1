@@ -27,9 +27,18 @@ def power operand, exponent
 end
 
 def factorial number
-  if number == 0
-    return 0
+  /*
+  if number == 0 || number == 1
+    return number
   end
+  result = 1
+  i = number
+  while i >= 2 do
+    result = result * i
+    i = i - 1
+  end
+  return result
+  */
   result = 1
   for i in 1..number
     result *= i
